@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/styles/categoria.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      <div class="container">
+        <div class="pesquisa">
+          <span> <b>Pesquisa</b> </span>
+          <input type="text" placeholder="Pesquisar" />
+          <button id="id"> <b>Pesquisar por ID</b> </button>
+          <button id="filtro"> <b>Pesquisar por FILTRO</b> </button>
+        </div>
+        <table border="2">
+          <thead id="thead">
+            <tr>
+              <th>Categoria ID</th>
+              <th>Nome</th>
+              <th colspan="2">Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tbody" class="tbody">
+            <tr>
+              <td>1502</td>
+              <td>Atacado</td>
+              <td><button id="editar" class="editar"> <b>Editar</b> </button></td>
+              <td><button id="deletar" class="deletar"> <b>Deletar</b> </button></td>
+            </tr>
+            <tr>
+              <td>0254</td>
+              <td>Varejo</td>
+              <td><button id="editar" class="editar"> <b>Editar</b> </button></td>
+              <td><button id="deletar" class="deletar"> <b>Deletar</b> </button></td>
+            </tr>
+            <tr>
+              <td>4578</td>
+              <td>Cama Mesa Banho</td>
+              <td><button id="editar" class="editar"> <b>Editar</b> </button></td>
+              <td><button id="deletar" class="deletar"> <b>Deletar</b> </button></td>
+            </tr>
+          </tbody>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <button id="addProduto"> <b>Adicionar Categoria</b> </button>
+            <a href="produto.html"> <button> <b>Produtos</b> </button> </a>
+          </div>
+        </table>
+
+        <div class="popup" id="popup">
+          <p id="fechar" class="fechar">X</p>
+          <input type="text" placeholder="Nome" id="nome" />
+          <input type="text" placeholder="ID" id="idcat" />
+          <button id="add">Salvar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="scriptes/categoria.js">
+      
+    </script>
+  </body>
+</html>

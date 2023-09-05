@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+}
+
+div .container {
+  background-color: rgb(176, 224, 230);
+  border: 3px solid blue;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+#thead {
+  background-color: rgb(70, 130, 180);
+  color: rgb(255, 255, 255);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15px 0;
+  border-color: rgb(0, 0, 255);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+table tr th {
+  padding: 1rem;
+}
+
+td {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: rgb(240, 248, 255);
+}
+
+.popup {
+  background-color: #d9d9d9;
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  top: 50px;
+  left: 30%;
+  padding: 1rem;
+  display: none;
+}
+
+.popup.ativo {
+  display: initial;
+}
+
+.popup input {
+  padding: 0.5rem;
+  display: block;
+  margin: 10px 0;
+}
+
+.fechar {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
+#editar {
+  color: rgb(255, 255, 255);
+  background-color: rgb(12, 163, 4);
+}
+
+#deletar {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+}
